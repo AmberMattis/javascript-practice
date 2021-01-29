@@ -1,3 +1,9 @@
+function lineBrake(){
+
+    return "==============================================================================";
+}
+
+
 
 // 1 //
 // Your task is to make a function that can take any non-negative integer as an
@@ -18,6 +24,24 @@ function descendingOrder(n){
     return parseInt(reversedNum);
 }
 console.log(descendingOrder(12345));
+
+console.log("")
+console.log(lineBrake());
+console.log("")
+
+
+// Above code refactored //
+function descendingOrderRefactored(n){
+    return parseInt(n.toString().split("").sort().reverse().join(""));
+}
+console.log(descendingOrderRefactored(3984858));
+
+console.log("")
+console.log(lineBrake());
+console.log("")
+
+
+
 
 
 
