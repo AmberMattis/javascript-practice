@@ -45,3 +45,29 @@ console.log("")
 
 
 
+// 2 //
+//In this little assignment you are given a string of space separated numbers,
+// and have to return the highest and lowest number.
+
+//The map() method creates a new array populated with the
+// results of calling a provided function on every element in the calling array.
+
+//the apply() method is a convenient way to pass an array of data as parameters to a function.
+
+function highAndLow(numbers){
+    numbers = numbers.split(' ').map(Number);
+    return Math.max.apply(0, numbers) + ' ' + Math.min.apply(0, numbers);
+}
+console.log(highAndLow(123343591-1));
+
+console.log("")
+console.log(lineBrake());
+console.log("")
+
+
+
+
+
+
+
+
