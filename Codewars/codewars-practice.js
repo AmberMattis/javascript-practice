@@ -54,11 +54,15 @@ console.log("")
 
 //the apply() method is a convenient way to pass an array of data as parameters to a function.
 
+//Math.max() grabs the highest element in an array
+//Math.min() grabs the lowest number in an array
+
 function highAndLow(numbers){
-    numbers = numbers.split(' ').map(Number);
-    return Math.max.apply(0, numbers) + ' ' + Math.min.apply(0, numbers);
+    let numbers1 = numbers.split(' ').map(Number);
+    return Math.max.apply(Math, numbers1) + ' ' + Math.min.apply(Math, numbers1);
 }
-console.log(highAndLow(123343591-1));
+
+console.log(highAndLow("1 4 6 7 9 -2"));
 
 console.log("")
 console.log(lineBrake());
