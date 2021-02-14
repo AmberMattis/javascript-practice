@@ -105,6 +105,31 @@ function squareSum(numbers){
 }
 
 
+//5//
+//Your task is to write a function that takes a string and return a new string with all vowels removed.
+// For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+// Note: for this kata y isn't considered a vowel.
+
+
+// My unsuccessful attempt //
+function disemvowel(str) {
+    let strArray = str.split(',');
+    let strNoVowel = str.join('');
+
+    for(i = 0; i < strArray.length; i++){
+        if(strArray[i] === strArray.toLowerCase("a") || strArray[i] === strArray.toLowerCase("e") || strArray[i] === strArray.toLowerCase("i") || strArray[i] === strArray.toLowerCase("o") || strArray[i] === strArray.toLowerCase("u")){
+            str.Array[i].remove();
+            strNoVowel;
+        }
+    }
+    return str;
+}
+
+
+//alternate solution, successful//
+function disemvowel2(str) {
+    return str.replace(/[aeiou]/gi, '');
+}
 
 
 
