@@ -10,15 +10,6 @@ function lineBrake(){
 // argument and return it with its digits in descending order. Essentially, rearrange
 // the digits to create the highest possible number.
 
-//TODO
-// 1.) convert the number to a string                                            (using toString())
-// 2.) convert the string into an array of strings                               (using .split())
-// 3.) sort the array so that the numbers are listed in ascending order          (using .sort())
-// 3.) reverse the order of the array                                            (using .reverse())
-// 4.) convert back into a string from an array                                  (using .join())
-// 5.) convert the string back into a number                                     (using parseInt() or parseFloat())
-// 6.) return the result
-
 function descendingOrder(n){
     const reversedNum = n.toString().split("").sort().reverse().join("");
     return parseInt(reversedNum);
@@ -69,6 +60,8 @@ console.log(lineBrake());
 console.log("")
 
 
+
+//3//
 //Complete the solution so that it reverses the string passed into it.
 // Ex: 'world'  =>  'dlrow'
 
@@ -77,12 +70,38 @@ function solution(str){
 }
 
 //alternate solution
-
 function solutionAlt(s){
     var o = '';
     for (var i = s.length - 1; i >= 0; i--)
         o += s[i];
     return o;
+}
+
+
+
+
+//4//
+// Complete the square sum function so that it squares each number passed into it and then sums the results together.
+// For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
+
+//my solution//
+function squareSum(numbers){
+
+    let sum = 0;
+
+    for (i = 0; i < numbers.length; i++){
+        numbers[i] *= numbers[i];
+        sum += numbers[i];
+    }
+    return sum;
+}
+
+// alternate solutoin //
+
+function squareSum(numbers){
+    return numbers.reduce(function(sum, n){
+        return (n*n) + sum;
+    }, 0)
 }
 
 
