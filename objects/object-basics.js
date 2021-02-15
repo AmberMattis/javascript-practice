@@ -27,3 +27,13 @@ var personTwo = {
 }
 
 console.log(personTwo.fullName());
+
+
+var car = {
+    model: "ford",
+    make: "mustang",
+    year: 2015,
+
+}
+
+console.log(personTwo.firstName + " drives a " + car.year + " " + car.model + " " + car.make + ".")
