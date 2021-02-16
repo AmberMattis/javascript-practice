@@ -37,3 +37,14 @@ var car = {
 }
 
 console.log(personTwo.firstName + " drives a " + car.year + " " + car.model + " " + car.make + ".")
+
+var person3 = {
+    firstName: "Alvin ",
+    lastName: "Smith",
+    age: 25,
+    greeting: function() {
+        return "Hello there, I'm " + this.firstName + " " + this.lastName;
+    }
+}
+
+console.log(person3.greeting());
