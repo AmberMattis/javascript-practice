@@ -48,3 +48,15 @@ var person3 = {
 }
 
 console.log(person3.greeting());
+
+
+var person4 = {
+    firstName: " Alice ",
+    lastName: " Jones ",
+    age: 40,
+    greeting: function () {
+        return "My name is " + this.firstName + " " + this.lastName + " nice to meet you!"
+    }
+}
+
+console.log(person4.greeting());
