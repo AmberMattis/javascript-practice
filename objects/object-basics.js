@@ -60,3 +60,4 @@ var person4 = {
 }
 
 console.log(person4.greeting());
+console.log(person3.greeting()+ " ..." + person4.greeting());
